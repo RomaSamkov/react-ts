@@ -1,9 +1,22 @@
-import React from "react";
+// import CreateProduct from "./components/CreateProduct";
+import ErrorMessage from "./components/ErrorMessage";
+import Loader from "./components/Loader";
+// import Modal from "./components/Modal";
+import { Product } from "./components/Product";
+import { useProducts } from "./hooks/products";
 
 function App() {
+  const { products, loading, error } = useProducts();
   return (
     <div className="container mx-auto max-w-2xl pt-5">
-      <h1 className="text-3xl font-bold underline">Hello TypeScript!</h1>
+      {loading && <Loader />}
+      {error && <ErrorMessage error={error} />}
+      {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
+      {/* <Modal title="Create New Product">
+        <CreateProduct />
+      </Modal> */}
     </div>
   );
 }
