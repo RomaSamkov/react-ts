@@ -10,7 +10,11 @@ export function Product({ product }: ProductsProps) {
 
   return (
     <div className="border py-2 px-4 rounded flex flex-col items-center mb-2 mt-2 cursor-pointer">
-      <img src={product.image} alt={product.title} className="w-1/6" />
+      <img
+        src={product.image}
+        alt={product.title}
+        className="w-1/6 rounded-lg"
+      />
       <p>{product.title}</p>
       <p>{product.price}</p>
       <button
