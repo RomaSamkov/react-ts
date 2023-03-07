@@ -45,7 +45,10 @@ export default function CreateProduct({ onCreate }: CreateProductProps) {
         onChange={changeHandler}
       />
       {error && <ErrorMessage error={error} />}
-      <button type="submit" className="py-2 px-4 border bg-yellow-400">
+      <button
+        type="submit"
+        className="py-2 px-4 border bg-yellow-400 rounded-xl hover:bg-yellow-600 hover:text-white"
+      >
         Create
       </button>
     </form>
