@@ -31,9 +31,10 @@ export default function ProductsPage() {
       )}
       <button
         onClick={open}
-        className="fixed bottom-5 right-5 rounded-full bg-red-700 text-white text-2xl px-4 py-2 hover:bg-yellow-400"
+        className="fixed bottom-8 right-5 rounded-full bg-yellow-600
+         text-white text-2xl px-4 py-2 hover:bg-yellow-400 flex justify-center align-middle"
       >
-        +
+        Add Product
       </button>
     </div>
   );
