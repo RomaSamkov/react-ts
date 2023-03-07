@@ -9,6 +9,11 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, 
+    rgba(2, 0, 36, 1) 0%, 
+    rgba(127, 127, 228, 1) 35%, 
+    rgba(55, 191, 218, 1) 100%);
 }
 
 code {
